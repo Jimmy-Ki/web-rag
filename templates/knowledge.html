@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识库</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- 容器 -->
+    <div class="flex h-screen">
+
+        <!-- 左侧工具栏 -->
+        <div class="flex h-screen w-16 flex-col justify-between border-e bg-white">
+            <div>
+                <div class="inline-flex size-16 items-center justify-center">
+                    <span class="grid size-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
+                        L
+                    </span>
+                </div>
+
+                <div class="border-t border-gray-100">
+                    <div class="px-2">
+                        <div class="py-4">
+                            <a href="#"
+                                class="t group relative flex justify-center rounded bg-blue-50 px-2 py-1.5 text-blue-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+
+                                <span
+                                    class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                                    General
+                                </span>
+                            </a>
+                        </div>
+
+                        <ul class="space-y-1 border-t border-gray-100 pt-4">
+                            <li>
+                                <a href="#"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+
+                                    <span
+                                        class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                                        Teams
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                    </svg>
+
+                                    <span
+                                        class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                                        Billing
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+
+                                    <span
+                                        class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                                        Invoices
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
+
+                                    <span
+                                        class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                                        Account
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
+                <form action="#">
+                    <button type="submit"
+                        class="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                        </svg>
+
+                        <span
+                            class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                            Logout
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 右侧知识库目录内容 -->
+        <div class="flex-1 p-6 flex flex-col">
+            <!-- 面包屑导航 -->
+            <nav class="flex mb-4">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li>
+                        <a href="/"
+                           class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-home mr-1"></i>
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <span class="inline-flex items-center text-sm text-gray-400">
+                            <i class="fas fa-chevron-right mx-1"></i>
+                        </span>
+                    </li>
+                    <li aria-current="page">
+                        <span class="inline-flex items-center text-sm font-medium text-gray-700">
+                            知识库
+                        </span>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- 创建按钮 -->
+            <button id="create-btn" class="mb-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+                创建
+            </button>
+
+            <div class="flex flex-wrap gap-4">
+                <!-- 知识库目录内容 -->
+                <div id="knowledge-list" class="w-full">
+                    <table class="min-w-full bg-white border border-gray-200">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 border-b border-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">id</th>
+                                <th class="py-3 px-4 border-b border-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">名称</th>
+                                <th class="py-3 px-4 border-b border-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">更新时间</th>
+                                <th class="py-3 px-4 border-b border-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">区块数量</th>
+                                <th class="py-3 px-4 border-b border-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="knowledge-list-body">
+                            <!-- 知识库条目会在此加入 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="copy-success" class="fixed top-4 right-4 bg-green-500 text-white text-sm p-2 rounded shadow-lg hidden">
+                复制成功
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 创建弹窗 -->
+    <div id="create-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">创建新知识库</h3>
+                <div class="mt-2 px-7 py-3">
+                    <input type="text" id="new-knowledge-name" class="w-full px-3 py-2 border rounded-md" placeholder="输入知识库名称">
+                </div>
+                <div class="items-center px-4 py-3">
+                    <button id="create-knowledge-btn" class="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-600">
+                        创建
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchKnowledgeList() {
+            const response = await fetch('/api/knowledge/list');
+            if (response.ok) {
+                const data = await response.json();
+                const knowledgeListContainer = document.getElementById('knowledge-list-body');
+                knowledgeListContainer.innerHTML = ''; // 清空现有条目
+                data.data.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.className = 'hover:bg-gray-100';
+                    row.innerHTML = `
+                        <td class="py-2 px-4 border-b border-gray-200"><button class="mr-2" title="复制" onclick="copyToClipboard('${item.id}')"><pre>${item.id}</pre></td>
+                        <td class="py-2 px-4 border-b border-gray-200">${item.name}</td>
+                        <td class="py-2 px-4 border-b border-gray-200">${new Date(item.update_time).toLocaleDateString()}</td>
+                        <td class="py-2 px-4 border-b border-gray-200">${item.nums}</td>
+                        <td class="py-2 px-4 border-b border-gray-200">
+                            <button onclick="redirectToDetail('${item.name}', '${item.id}')" class="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">查看</button>
+                            <button onclick="deleteKnowledge('${item.id}')" class="px-3 py-2 bg-red-500 text-white rounded hover:bg-red-600">删除</button>
+                            <button onclick="goDialog('${item.id}')" class="px-3 py-2 bg-green-500 text-white rounded hover:bg-green-600">对话</button>
+                        </td>
+                    `;
+                    knowledgeListContainer.appendChild(row);
+                });
+            } else {
+                console.error('Error fetching knowledge list:', response.status);
+            }
+        }
+
+        function redirectToDetail(name,uuid) {
+            const encodedName = encodeURIComponent(name);
+            window.location.href = `/knowledge/detail/${uuid}?name=${encodedName}`;
+        }
+
+        function goDialog(id) {
+            window.location.href = `/${id}`;
+        }
+
+        function deleteKnowledge(id) {
+            fetch(`/api/knowledge/delete/${id}`, {
+                method: 'GET',
+            }).then(response => {
+                if (response.ok) {
+                    fetchKnowledgeList(); // 刷新知识库列表
+                } else {
+                    console.error('Error deleting knowledge:', response.status);
+                }
+            }).catch(error => {
+                console.error('Error deleting knowledge:', error);
+            });
+        }
+
+        function copyToClipboard(id) {
+            navigator.clipboard.writeText(id).then(() => {
+                const successMessage = document.getElementById('copy-success');
+                successMessage.classList.remove('hidden');
+                setTimeout(() => successMessage.classList.add('hidden'), 2000); // 2秒后隐藏提示
+            }).catch(err => {
+                console.error('复制失败:', err);
+            });
+        }
+
+        // 页面加载后获取知识库列表
+        document.addEventListener('DOMContentLoaded', fetchKnowledgeList);
+
+        // 创建按钮点击事件
+        document.getElementById('create-btn').addEventListener('click', () => {
+            document.getElementById('create-modal').classList.remove('hidden');
+        });
+
+        // 创建知识库按钮点击事件
+        document.getElementById('create-knowledge-btn').addEventListener('click', () => {
+            const newKnowledgeName = document.getElementById('new-knowledge-name').value;
+            if (newKnowledgeName) {
+                createKnowledge(newKnowledgeName);
+            } else {
+                alert('请输入知识库名称');
+            }
+        });
+
+        async function createKnowledge(name) {
+            const response = await fetch(`/api/knowledge/create/${name}`, {
+                method: 'GET',
+            });
+            if (response.ok) {
+                fetchKnowledgeList(); // 刷新知识库列表
+                document.getElementById('create-modal').classList.add('hidden'); // 关闭弹窗
+                document.getElementById('new-knowledge-name').value = ''; // 清空输入框
+            } else {
+                console.error('Error creating knowledge:', response.status);
+            }
+        }
+    </script>
+</body>
+</html>
