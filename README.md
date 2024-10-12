@@ -36,6 +36,7 @@ but I will implement it in the future.
 
 ## virual environment setup
 I recommended using a virtual environment for Python projects, such as venv or conda. To set up the project, follow these steps:
+
 1. Create a virtual environment (optional but recommended):
 ```bash
 python3 -m venv venv
