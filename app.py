@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify, Response, url_for, redirect
 from flask_cors import CORS
-from utils.data_chunker import ReadSingleFile, Vectordatabase, Zhipuembedding
+from utils.data_process import ReadSingleFile, Vectordatabase, Zhipuembedding
 from utils.GPTstreamer import GPTStreamer as Streamer
 import os
 from dotenv import load_dotenv
